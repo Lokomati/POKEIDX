@@ -1,0 +1,76 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #e63946, #f1fa8c);
+  min-height: 100vh;
+}
+
+.container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 0 #222;
+  margin-bottom: 30px;
+}
+
+/* Botones Pokémon */
+.btn {
+  background-color: #ffffff !important;
+  color: #222 !important;
+  border: 3px solid #222 !important;
+  border-radius: 12px !important;
+  font-weight: bold !important;
+  text-transform: capitalize;
+  padding: 10px 18px !important;
+  margin: 8px !important;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 0 #222;
+}
+
+.btn:hover {
+  background-color: #ffcc00 !important;
+  transform: translateY(-3px);
+  box-shadow: 0 7px 0 #222;
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #222;
+}
+
+/* Pokémon seleccionado */
+.container > div:last-child {
+  background: white;
+  width: 280px;
+  margin: 40px auto 0;
+  padding: 25px;
+  border: 5px solid #222;
+  border-radius: 25px;
+  box-shadow: 0 8px 0 #222;
+}
+
+h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: #e63946;
+  margin-bottom: 15px;
+}
+
+.container img {
+  width: 180px;
+  height: 180px;
+  image-rendering: pixelated;
+  transition: transform 0.3s ease;
+}
+
+.container img:hover {
+  transform: scale(1.15);
+}
